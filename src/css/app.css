@@ -1,0 +1,22 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    /*background-color: #340034;*/
+    /*box-sizing: border-box;*/
+    height: 100%;
+    width: 100%;
+}
+
+.hero {
+    background: #350035;
+    height: 100vh;
+    display: block;
+}
+
+.hero h1 {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
