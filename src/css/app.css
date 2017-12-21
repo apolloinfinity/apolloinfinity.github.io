@@ -1,22 +1,19 @@
-*, *:before, *:after {
+html {
     box-sizing: border-box;
 }
 
-html, body {
-    /*background-color: #340034;*/
-    /*box-sizing: border-box;*/
-    height: 100%;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body,
+html {
     width: 100%;
+    height:100%;
+    overflow: hidden;
 }
 
-.hero {
-    background: #350035;
+div.particles {
+    background-color: #350035;
     height: 100vh;
-    display: block;
-}
-
-.hero h1 {
-    display: inline-block;
-    color: #fff;
-    text-align: center;
 }
