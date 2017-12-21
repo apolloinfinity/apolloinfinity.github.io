@@ -24,6 +24,8 @@ a,
 a:active {
     color: #16a085;
     text-decoration: none;
+    margin: 10px 0;  
+    display: inline-block;   
 }
 
 a:hover {
