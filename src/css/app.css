@@ -1,3 +1,6 @@
+/**************/
+/*Defaults */
+/**************/
 html {
     box-sizing: border-box;
     overflow: hidden;
@@ -12,26 +15,69 @@ body {
     padding: 5%;
 }
 
+
+
+/**************/
+/* Grid */
+/**************/
+
 #grid {
     /* background-color: #350035; */
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-auto-rows: 80vh;
+    grid-auto-rows: minmax(100%, auto);
     grid-template-areas: 
     "about projects"
     ;
     grid-gap: 10px;
     max-width: 80%;
     margin: 0 auto;
-    color: #fff;
+
 }
+
 
 .about {
     grid-area: about;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .projects {
     grid-area: projects;
-    background-color: purple;
+    /* background-color: purple; */
 }
+
+#sub-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: minmax(150px,auto);
+    grid-template-areas: 
+    "img-c info"
+    ;
+}
+
+.img-contain {
+    grid-area: img-c;
+    /* background-color: red; */
+}
+
+.info {
+    grid-area: info;
+    /* background-color: blue; */
+
+}
+
+
+
+/* Everything else */
+
+img {
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.img-contain {
+    text-align: center;
+}
+
+
