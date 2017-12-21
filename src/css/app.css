@@ -6,14 +6,72 @@ html {
     box-sizing: inherit;
 }
 
-body,
-html {
-    width: 100%;
-    height:100%;
-    overflow: hidden;
+body {
+    font-family: 'Questrial', sans-serif;
+    padding: 5%;
 }
 
-div.particles {
-    background-color: #350035;
-    height: 100vh;
+#grid {
+    /* background-color: #350035; */
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-auto-rows: 250px 250px;
+    grid-template-areas: 
+    "box-1 main box-3"
+    "box-2 main box-4"
+    ;
+    grid-gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.box-1 {
+    grid-area: box-1;
+    background-color: #3498db;
+}
+
+.box-2 {
+    grid-area: box-2;
+    background-color: #1269f3;
+}
+
+.box-3 {
+    grid-area: box-3;
+    background-color: #f39c12;
+}
+
+.box-4 {
+    grid-area: box-4;
+    background-color: #c0392b;
+    
+}
+
+main {
+    grid-area: main;
+    /* background-color: #27ae60; */
+    background-color: #34db77;
+    padding: 1%;
+    text-align: center;
+    position: relative;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main div.about {
+    width: 70%;
+    background-color: red;
+    text-align: left;
+}
+
+.box,
+main {
+    border-radius: 5px;
+}
+
+.box h2{
+    /* border: 2px solid ; */
+    text-align: center;
 }
