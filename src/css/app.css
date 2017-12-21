@@ -16,6 +16,9 @@ body {
     color: #34495e;
 }
 
+h1 {
+    margin-top: 60px;
+}
 
 
 /**************/
@@ -72,10 +75,6 @@ main {
 
 
 /* Everything else */
-
-.info h1 {
-    margin-top: 60px;
-}
 img {
     height: 150px;
     border-radius: 50%;
@@ -84,6 +83,20 @@ img {
 
 .img-contain {
     text-align: center;
+}
+
+.projects {
+    padding: 2%;
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.proj {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 
