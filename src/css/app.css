@@ -152,6 +152,10 @@ img {
     }
 
     .info { text-align: center;}
+
+    .projects {text-align: left;}
+    .projects h1 { text-align: left;}
+    .proj {text-align: left;}
     
     
 }
@@ -171,5 +175,8 @@ img {
     .info h1 {
         margin: 20px 0;
     }
+
+    /* .projects {text-align: left;} */
+
 }
 
