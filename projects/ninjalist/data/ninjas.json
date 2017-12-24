@@ -1,0 +1,25 @@
+[{
+  "name": "Yoshi",
+  "belt": "green",
+  "rate": 50,
+  "available": true,
+  "thumb": "https://placeimg.com/100/100/animals"
+}, {
+  "name": "Cristal",
+  "belt": "Yellow",
+  "rate": 30,
+  "available": true,
+  "thumb": "https://placeimg.com/100/100/nature"
+}, {
+  "name": "Ryu",
+  "belt": "orange",
+  "rate": 10,
+  "available": false,
+  "thumb": "https://placeimg.com/100/100/people"
+}, {
+  "name": "Javier",
+  "belt": "black",
+  "rate": 3000,
+  "available": true,
+  "thumb": "https://placeimg.com/100/100/tech"
+}]
