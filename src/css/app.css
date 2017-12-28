@@ -54,7 +54,7 @@ i { margin-right: 10px; color: #a01631;}
     "about projects"
     ;
     grid-gap: 10px;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
 
 }
@@ -85,7 +85,11 @@ i { margin-right: 10px; color: #a01631;}
     /* background-color: red; */
 }
 
-.info {grid-area: info;}
+.info {
+    grid-area: info;
+    /* background:chartreuse; */
+
+}
 
 main {
     grid-area: main;
@@ -160,6 +164,7 @@ img {
     }
 
     .info { text-align: center;}
+    .info a:last-child {margin-left: 0px;}
 
     .projects {text-align: left;}
     .projects h1 { text-align: left;}
@@ -172,7 +177,7 @@ img {
     #sub-grid {
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-auto-rows: 150px auto auto;
+        grid-auto-rows: 250px auto auto;
         grid-template-areas: 
         "img-c img-c"
         "info info"
@@ -183,6 +188,7 @@ img {
     .info h1 {
         margin: 20px 0;
     }
+    .info a:last-child {margin-left: 0px;}
 
     /* .projects {text-align: left;} */
 
