@@ -1,0 +1,137 @@
+/* 
+#df0000	(223,0,0) Red
+#f2c300	(242,195,0) Gold
+#0099f6	(0,153,246) Blue
+#00b844	(0,184,68) Gree
+#000000 Space
+
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #003366;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+a {font-family: "Raleway", sans-serif;}
+
+.btn {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 3px solid #ccc;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color linear 200ms;
+    
+}
+
+.btn:hover {
+    background-color: #f2c300;
+    color: #00b844;
+}
+
+.btn:first-child{
+    margin-right: 20px;
+}
+
+#grid {
+    /* background-color: yellow; */
+    /* border: 2px solid #000; */
+    border-radius: 10px;
+    width: 800px;;
+    margin: 8% auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 300px 50px; 
+    grid-template-areas: 
+    "img quote"
+    "img social"
+    ;
+    grid-gap: 10px;
+    padding: 1%;
+    z-index: 100;
+
+}
+
+div.img-holder {
+    grid-area: img;
+    /* border: 3px solid #ccc; */
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    /* box-shadow: -100px 0px 50px 10px rgba(255, 255, 255, 0.212); */
+}
+
+
+div.quote-box {
+    grid-area: quote;
+    /* background: green; */
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10%;
+    grid-template-areas:
+    "q"
+    "b"
+    ;
+}
+
+.quote-box div:first-child {
+    grid-area: q;
+    /* background: pink; */
+}
+
+.quote.box div:last-child {
+    grid-area: b;
+    /* background: aquamarine; */
+}
+
+#author {
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#quote {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+div.button-bar {
+    grid-area: social;
+    /* background: blue; */
+    padding: 2%;
+    text-align: right;
+}
+
+.img-holder img {
+    height: 200px;
+}
+
+.img-holder {
+    text-align: center;
+}
