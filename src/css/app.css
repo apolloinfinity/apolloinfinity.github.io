@@ -92,7 +92,7 @@ i { margin-right: 10px; color: #a01631;}
 
 }
 
-main {
+.main {
     grid-area: main;
     /* background-color: red; */
 }
