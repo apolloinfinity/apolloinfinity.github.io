@@ -1,2 +1,2 @@
 # apolloinfinity.github.io
-I'll be implementing BEM pattern for CSS.
+This is my portfolio website. I will put projects and update my website from time to time. 
