@@ -1,20 +1,51 @@
 /* Root variables */
 :root {
-    --main-bg: #7A7978;
-    --second-bg: #8DE4FF;
+    --main-c: #7A7978;
+    --second-c: #8DE4FF;
+    --darkblue: #054a91;
+    --green: #7fb069;
+    --yellow: #fcca46;
+    --orange: #f86624;
+    --fuchsia: #d81159;
     /* 
     my colors:
-    7A7978
-    87CBAC
-    90FFDC
-    8DE4FF
-    8AC4FF
+    #7A7978
+    #87CBAC
+    #90FFDC
+    #8DE4FF
+    #8AC4FF
     */
 }
 
 /**************/
+/*BEM
+.btn: is the block component
+.btn--orange: Modifier that changes the block component
+.btn__price: Element depends on the block element
+
+
+*/
+/**************/
+
+
+
+
+/**************/
 /*Defaults */
 /**************/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
 html {
     box-sizing: border-box;
     overflow: hidden;
@@ -29,35 +60,36 @@ body {
     /* padding: 5%; */
     color: #34495e;
     text-align: center; /* Temp */
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    /* padding: 3rem; */
+    box-sizing: border-box;
 }
+
+.btn:link,
+.btn:visited {
+    background-color: var(--yellow);
+    padding: 1.5rem 2.5rem;
+    margin: 1rem;
+    border-radius: 4rem;
+    text-decoration: none;
+    color: var(--main-c);
+    font-size: 2rem;
+}
+
+
 
 div.content-grid {
     display: grid;
-    background-color: red;
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     /* font-size: 2rem; */
 }
 
-aside {
-    background-color: var(--main-bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-}
-
-aside:first-child h1 small  {
-    font-weight: normal;
-}
-
-aside:nth-child(3) {
-    background-color: var(--second-bg);
-}
-
-div.middle {
-    background-image: url('/src/img/desk.jpeg');
+div.content--middle {
+    background-image: /*linear-gradient(rgb(144,255,220, 0.7), rgba(255, 255, 255, 0.5)),*/ url('/src/img/desk.jpeg');
     background-size: cover;
 }
 
