@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+
+    <title>Unit Converter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 d-flex justify-content-center btn-group btn-group-lg">
+                <button class="btn btn-info" id="mass">Mass
+                    <i class="fas fa-weight"></i>
+                </button>
+                <button class="btn btn-info" id="length">Length
+                    <i class="fas fa-tape"></i>
+                </button>
+                <button class="btn btn-info" id="volume">Volume
+                    <i class="fas fa-flask"></i>
+                </button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Unit Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input id="UnitInput" type="number" class="form-control form-control-lg" placeholder="Enter a number">
+                    </div>
+                    <!-- <div class="form-group">
+                        <input type="radio" name="mass" value="Fahrenheit" id="lbs" checked>Pounds
+                        <input type="radio" name="mass" value="Celsius" id="celc">Kilograms
+
+                    </div> -->
+                </form>
+
+                <div id="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-body">
+                            <h4><span id="cent"></span></h4>
+                            <div id="centOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success mb-2">
+                        <div class="card-body">
+                            <h4><span id="kilos"></span></h4>
+                            <div id="kiloOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-warning mb-2">
+                        <div class="card-body">
+                            <h4><span id="imperial"></span></h4>
+                            <div id="imperialOutput"></div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
