@@ -16,7 +16,7 @@
     </script>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Javier Ramirez's Portfolio website. Enthusiastic Fullstack Developer with a deep love for learning all things programming.">
     <meta name="keywords" content="portfolio, javascript, python, html, css, front-end developer, fullstack developer, fresno, selma, ca">
@@ -24,48 +24,65 @@
 
     <title>Javier Ramirez's Portfolio</title>
     <link rel="shortcut icon" href="https://apolloinfinity.github.io/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="lib/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Ubuntu:400,500,700" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
     <link rel="stylesheet" href="src/css/app.css">
+
 </head>
 
 <body>
-    <div class="main-grid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Javier Ramirez</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <aside class="aside-grid-left left-aside">
-            <div class="info">
-                <h1>I am a full stack and Python developer in Fresno County
-                    <br>
-                    <br>
-                    <small>I specialize in building beautiful, fully functional web apps and websites.</small>
-                </h1>
-            </div>
-            <div class="name">
-                <img src="src/img/me.jpg" alt="">
-                <h2>Javier Ramirez</h2>
-            </div>
-            <div class="contact">
-
-            </div>
-        </aside>
-
-        <main class="bg-img">
-
-        </main>
-
-        <aside class="aside-grid-right">
-            <div class="top about">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Me</a>
+                    </li>
+                </ul>
 
             </div>
-            <div class="bottom projects">
-
+        </div>
+    </nav>
+    <section class="jumbotron jumbotron-fluid bg-hero">
+        <div class="container">
+            <h1 class="display-4 text-uppercase">I am Javier Ramirez</h1>
+            <p class="lead text-uppercase">A Fullstack Developer specializing in JavaScript and Python</p> 
+            <!-- <p class="lead">And an aspiring Data Scientist!</p> -->
+        </div>
+    </section>
+    <section class="container">
+        <div class="about row">
+            <div class="col-md">
+                <h2 class="">Web Services</h2>
             </div>
-        </aside>
-    </div>
 
+            <div class="col-md">
+                <h2 class="">Web Apps</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

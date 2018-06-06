@@ -35,86 +35,8 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
-div.main-grid {
-    display: grid;
-    height: 100vh;
-    background-color: #fff;
-    grid-template-columns: 40% 30% 30%;
-
-}
-
-aside.aside-grid-left {
-    display: grid;
-    grid-template-rows: repeat(50%);
-    grid-gap: 20px;
-    /* background-color: var(--nav-bar); */
-}
-
-aside.aside-grid-right {
-    display: grid;
-    grid-template-rows: repeat(50%);
-    grid-gap: 20px;
-    /* background-color: var(--nav-bar); */
-}
-
-main.bg-img {
-    /* background-color: var(--salmon); */
-    background-image: url('../img/desk.jpeg');
+.bg-hero {
+    background-image: url('/src/img/cool-background.png');
     background-size: cover;
-    background-position: center bottom;
-}
-
-.left-aside {
-    
-}
-.name {
-    /* text-align: center ; */
-    padding: 2em;
-}
-
-.info {
-    background-color: var(--gre?en);
-    padding: 2em;
-}
-
-.info h1 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-.info h1 small {
-    color: var(--text-color);
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-}
-
-.info p {
-    margin-top: 30px;
-    font-size: 1em;
-}
-
-.name {
-    display: flex;
-    /* background-color: var(--yellow); */
-    justify-content: flex-start;
-    align-items: center;
-}
-.name img {
-    height: 100px;
-    width: auto;
-    border-radius: 50%;
-    /* display: inline-block; */
-}
-
-.name h2 {
-    margin-left: 25px;
-    /* display: inline-block; */
-    /* background-color: var(--light-purple); */
-}
-
-.top {
-    background-color: var(--light-green);
+    height: 50vh;
 }
