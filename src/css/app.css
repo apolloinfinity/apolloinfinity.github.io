@@ -1,13 +1,15 @@
 /**************/
+
 /*CSS Variables */
+
 /**************/
+
 :root {
     --text-color: #474647;
     --blue: #2D7DD2;
     --green: #97CC04;
     --yellow: #EEB902;
     --orange: #F45D01;
-
     /*Another Color Scheme*/
     --light-blue: #4D9DE0;
     --salmon: #E15554;
@@ -17,16 +19,21 @@
 }
 
 /**************/
+
 /*Defaults */
+
 /**************/
+
 html {
     box-sizing: border-box;
     /* overflow: hidden; */
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
@@ -35,8 +42,39 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
+/* .bg-custom-blue {
+    background-color: var(--light-green);
+ } */
+
+.row {
+    padding: 3.75rem 0;
+}
+
 .bg-hero {
     background-image: url('/src/img/cool-background.png');
     background-size: cover;
-    /* height: 50vh; */
+    height: 60vh;
+}
+
+.bg-hero .container {
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .bg-hero {
+        height: 100%;
+    }
+    .bg-hero .container {
+        padding-top: inherit;
+    }
+}
+
+.about {
+    padding-top: 100px;
+}
+
+.card-custom {
+    -webkit-box-shadow: 0px 2px 6px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 2px 6px -3px rgba(0,0,0,1);
+box-shadow: 0px 2px 6px -3px rgba(0,0,0,1);
 }
