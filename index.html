@@ -24,8 +24,7 @@
 
     <title>Javier Ramirez's Portfolio</title>
     <link rel="shortcut icon" href="https://apolloinfinity.github.io/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
@@ -35,158 +34,192 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Javier Ramirez</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="navbar-brand">
+                <!-- navbar items, navbar burger... -->
+                <div class="navbar-brand">
+                    <a href="" class="navbar-item">Javier Ramirez</a>
+                </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
-                    </li>
-                </ul>
+            </div>
+            <div class="navbar-menu">
+                <!-- navbar start, navbar end -->
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        About Me
+                    </a>
+                    <a class="navbar-item">
+                        Projects
+                    </a>
+                    <a class="navbar-item">
+                        Contact Me
+                    </a>
+                </div>
 
             </div>
         </div>
+
     </nav>
-    <section class="jumbotron jumbotron-fluid bg-hero">
-        <div class="container">
-            <h1 class="display-4 text-uppercase font-weight-bold">I am Javier Ramirez</h1>
-            <p class="lead text-uppercase">Fullstack Developer specializing in JavaScript and Python</p>
-            <!-- <p class="lead">And an aspiring Data Scientist!</p> -->
+    <section class="hero bg-hero is-medium is-bold">
+        <div class="hero-body">
+            <div class="container text-center">
+                <h1 class="title">
+                    I AM JAVIER RAMIREZ
+                </h1>
+                <h2 class="subtitle">
+                    FULLSTACK DEVELOPER SPECIALIZING IN JAVASCRIPT AND PYTHON
+                </h2>
+            </div>
         </div>
     </section>
-    <section class="container">
-        <div class="about row">
 
-            <div class="col-md-6 col-sm-12">
-                <div>
-                    <h2 class="">About Me</h2>
-                    <p>I was born a dreamer. Changing the world at one line of code at a time seemed improbable but not impossible.</p>
-                    <p>Teaching myself how to code and program seemed impossible. I proved to myself that it wasn't impossible
-                        or improbable.</p>
-                    <p></p>
+    <section class="section" id="about">
+        <div class="container">
+            <div class="columns">
+                <div class="column text-center">
+                    <h2 class="title">About Me</h2>
+                    <p class="text-left">I am a full stack developer from Selma, CA. A small but growing city south of Fresno. The very thought
+                        of being able to create things that can help people achieve their goals or dreams is why I love being
+                        a developer. From small simple ideas to big complicated ideas, I love making them come to life.</p>
+                    <img src="src/img/me.jpg" alt="" class="">
+                </div>
+                <div class="column">
+                    <div class="media media-custom">
+                        <div class="media-left">
+                            <i class="fab fa-python has-text-link"></i>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <h3>Python</h3>
+                                <p>The demand for Python developers has increased in the past few years. Python is my second
+                                    language but it is my preferred language. I can build web apps using Flask or Django.</p>
+                                <p>I'm currently taking a course on becoming a Data Scientist along with Java.</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="">
+                        <div class="media media-custom">
+                            <div class="media-left">
+                                <i class="fab fa-js-square has-text-warning"></i>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h3>JavaScript</h3>
+                                    <p>JavaScript is the language that powers the web. No wonder the demand for JavaScript Developers
+                                        has increased significantly with the advent of React, Vue, and Angular 6.</p>
+                                    <p>AngularJS was one of my first frameworks but I currently updating my skills to work with
+                                        ReactJS.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="">
+                        <div class="media media-custom">
+                            <div class="media-left">
+                                <i class="fas fa-database has-text-danger"></i>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h3>Databases</h3>
+                                    <p>SQL Databases are among my specialties. I love working with data. From small databases
+                                        that utilize the like of SQLite for Native running apps or big complicated databases
+                                        that need many tables to store related information, or the modern NoSQl Databases
+                                        like MongoDB, I can build them.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
-
-            <div class="col-md-6">
-                <ul class="list-group list-group-flush custom-group">
-                    <li class="list-group-item">
-                        <i class="fab fa-js"></i>
-                        <p>The language of the web. JavaScript g</p>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fab fa-python"></i>
-                        <p>Python is quickly becoming a powerful language for the backend</p>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fas fa-database"></i>
-                        <p>SQL Databases are amongst my specialties. I </p>
-                    </li>
-                    
-                </ul>
-                
-            </div>
-
         </div>
-        <div class="clearfix"></div>
-        <div class="projects row">
-            <div class="col-md-4 mt-5">
-                <div class="card card-custom">
-                    <div class="card-body">
-                        <h5 class="card-title">Pig Game with Dice</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Front-end Project</h6>
-                        <p class="card-text">A game built with Vanilla JavaScript to demonstrate the power and the limitless imagination that
-                            is the mind.</p>
-                        <a href="https://apolloinfinity.github.io/projects/piggame/" class="btn btn-outline-success">View Project</a>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child box">
+                                <p class="title">Vertical tiles</p>
+                                <p class="subtitle">Top box</p>
+                            </article>
+                            <article class="tile is-child box">
+                                <p class="title">Vertical tiles</p>
+                                <p class="subtitle">Bottom box</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">Middle box</p>
+                                <p class="subtitle">With an image</p>
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Wide column</p>
+                            <p class="subtitle">Aligned with the right column</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
+                                    tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-4 mt-5">
-                <div class="card card-custom">
-                    <div class="card-body">
-                        <h5 class="card-title">Quote Generator</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Front-end with Ajax API</h6>
-                        <p class="card-text">Quote Generator build with vanilla JS. The quotes are fed from a repo of mine using an Ajax call.
-                        </p>
-                        <a href="https://apolloinfinity.github.io/projects/quotegenerator/" class="btn btn-outline-success">View Project</a>
-                    </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <div class="content">
+                            <p class="title">Tall column</p>
+                            <p class="subtitle">With even more content</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar,
+                                    at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero
+                                    rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis
+                                    semper odio felis ut quam.</p>
+                                <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque
+                                    interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis
+                                    neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit
+                                    sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula,
+                                    at volutpat tortor.</p>
+                                <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus
+                                    dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus.
+                                    Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque
+                                    non semper leo.</p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-
-            <div class="col-md-4 mt-5">
-                <div class="card card-custom">
-                    <div class="card-body">
-                        <h5 class="card-title">Bookmarker Keeper</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Front-end</h6>
-                        <p class="card-text">A simple way to keep list of your favorite websites. This project utilizes localStorage from the
-                            Web Storage API.</p>
-                        <a href="https://apolloinfinity.github.io/projects/bookmarker/" class="btn btn-outline-success">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mt-5">
-                <div class="card card-custom bg-custom-blue">
-                    <div class="card-body">
-                        <h5 class="card-title">Ninja List</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Front-end with AngularJS</h6>
-                        <p class="card-text">Who doesn't love ninjas? We all wish we could be one but the years of training takes away from family
-                            time. Instead hire a ninja!</p>
-                        <a href="https://apolloinfinity.github.io/projects/ninjalist//#!/home" class="btn btn-outline-success">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mt-5">
-                <div class="card card-custom bg-custom-blue">
-                    <div class="card-body">
-                        <h5 class="card-title">Unit Conversion</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Front-end</h6>
-                        <p class="card-text">This project originally is from a
-                            <a href="https://www.youtube.com/watch?v=7l-ZAuU8TXc&t=3s">YouTube Tutorial by Brad Traversy</a> on building a Unit Converter with JS and Bootstrap 4. At
-                            the end he asked us to improve it or add more to it. I added a few features and implemented the
-                            Modular Design Pattern.</p>
-                        <a href="https://apolloinfinity.github.io/projects/unitconversion/" class="btn btn-outline-success">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mt-5">
-                <div class="card card-custom bg-custom-blue">
-                    <div class="card-body">
-                        <h5 class="card-title">Commerce Design</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Web Design</h6>
-                        <p class="card-text">One of my earlier design projects I created just to create. I had a lot of fun on this one as I was
-                            still learning the ins-and-outs of Bootstrap and Media queries</p>
-                        <a href="https://apolloinfinity.github.io/projects/commerce/" class="btn btn-outline-success">View Project</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        </div>
+
     </section>
 
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

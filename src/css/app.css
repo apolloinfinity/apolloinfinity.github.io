@@ -24,10 +24,10 @@
 
 /**************/
 
-html {
+/* html {
     box-sizing: border-box;
     /* overflow: hidden; */
-}
+/* }
 
 *,
 *:before,
@@ -35,19 +35,27 @@ html {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
-}
+} */ */
 
 body {
     /* background-color: var(--light-green); */
     font-family: 'Questrial', sans-serif;
 }
 
-/* .bg-custom-blue {
-    background-color: var(--light-green);
- } */
+.text-center {
+    text-align: center;
+}
 
-.row {
-    padding: 3.75rem 0;
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+i {
+    font-size: 3.5rem;
 }
 
 .bg-hero {
@@ -56,29 +64,6 @@ body {
     /* height: 60vh; */
 }
 
-.bg-hero .container {
-    padding-top: 100px;
-}
-
-@media only screen and (max-width: 575.98px) {
-    .bg-hero {
-        height: 100%;
-    }
-    .bg-hero .container {
-        padding-top: inherit;
-    }
-}
-
-.about {
-    padding-top: 100px;
-}
-
-.card-custom {
-    -webkit-box-shadow: 0px 2px 6px -3px rgba(0,0,0,1);
--moz-box-shadow: 0px 2px 6px -3px rgba(0,0,0,1);
-box-shadow: 0px 2px 6px -3px rgba(0,0,0,1);
-}
-
-.custom-group li i {
-    font-size: 2rem;
+.media-custom {
+    margin-bottom: 2.5rem;
 }
